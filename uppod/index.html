@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<base href="/">
+<!--jQuery-->
+<script src="src/js/jquery-2.1.4.min.js"></script>
+<!--include swfobject-->
+<script src="src/js/swfobject.js"></script>
+<!--include uppod api-->
+<script src="src/js/uppod_api.js"></script>
+
+
+<script src="//unisound.cdnvideo.ru/static/js/xman.min.js"></script>
+<script src="main.js"></script>
+
+
+<section>
+	<div id="myPlayer"></div>
+</section>
+
+<script>
+	var flashvars = {
+		"m":"audio",
+		"file":"src/file.mp3",
+		"uid":"myPlayer"}; 
+		
+	var params = {
+		bgcolor:"#ffffff", 
+		wmode:"opaque", 
+		allowFullScreen:"true", 
+		allowScriptAccess:"always",
+		type:"application/x-shockwave-flash"}; 
+		
+	swfobject.embedSWF("src/swf/uppod.swf", "myPlayer", "420", "35", "10.0.0.0", "src/swf/uppod.swf", flashvars, params);
+</script>
+</html>
