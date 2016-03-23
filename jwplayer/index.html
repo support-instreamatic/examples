@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="UTF-8">
+<title>AdMan Example: JwPlayer</title>
+
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//unisound.cdnvideo.ru/static/js/xman.min.js"></script>
+<script src="src/js/main.js"></script>
+
+<script src="src/js/jwplayer.js"></script>
+
+<div id="player_container">
+  <div id="player"></div>
+</div>
+
+<script type="text/javascript">
+  jwplayer("player").setup({
+    flashplayer: "src/swf/player.swf",
+    file: "src/file.mp3",
+    volume: 70,
+    autostart: false,
+    width: 420,
+    height: 24,
+    controlbar: "bottom"
+  });
+</script>
+</html>
