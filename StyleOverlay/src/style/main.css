@@ -1,0 +1,142 @@
+.unisound-player-overlay{
+	position:absolute;
+	background: white;
+	top: 2%;
+	left: 2%;
+}
+.unisound-player-overlay > div:first-child{
+	border: 1px solid #E4E4E4;
+	border-radius: 5px;
+	height: 40px;
+	width: auto;
+	padding: 10px 15px;
+	background: #ECECEC;
+}
+.unisound-player-overlay > div:last-child{
+	background: transparent;
+	position: relative;
+	padding-top: 12px;
+}
+.unisound-player-overlay > div:last-child > a{
+	display: inline-block;
+	width: 260px;
+	margin-left: 15px;
+	display: inline-block;
+	color: #292929;
+}
+.unisound-player-overlay > div:last-child > a .unisound-text{
+	overflow: hidden;
+	position: relative;
+	white-space: nowrap;
+}
+.unisound-player-overlay > div:last-child > a .unisound-text .str_move{
+	white-space: nowrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.unisound-player-overlay > div:last-child > a .unisound-text .str_move_clone {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+.unisound-player-overlay > div:last-child > .unisound-left{
+	font-size: 1.4rem;
+	color: #484848;
+	font-weight: normal;
+	font-family: sans-serif;
+	display: inline-block;
+}
+.unisound-player-overlay > div:last-child > .unisound-site a{
+	font-size: 11px;
+	color: #292929;
+}
+.unisound-player-overlay div > button{
+	display: inline-block;
+	width: 40px;
+	height:40px;
+	cursor: pointer;
+	background: white;
+	border:0;
+	padding: 0;
+	margin-left: 20px;
+}
+.unisound-player-overlay div > button:focus{
+	outline:none;
+}
+.unisound-player-overlay div > button:active{
+	background-size: 92%;
+	background-position: 2px 2px;
+}
+.unisound-player-overlay div > button:first-child{
+	margin-left: 0px;
+}
+.unisound-player-overlay div .unisound-play{
+	background: url('../img/play.png') no-repeat;
+	background-size: 100%;
+}
+.unisound-player-overlay div .unisound-pause{
+	background: url('../img/pause.png') no-repeat;
+	background-size: 100%;
+}
+.unisound-player-overlay div .unisound-restart{
+	background: url('../img/replay.png') no-repeat;
+	background-size: 100%;
+}
+.unisound-player-overlay div .unisound-mute{
+	background: url('../img/mute.png') no-repeat;
+	background-size: 100%;
+}
+.unisound-player-overlay div .unisound-volume-back{
+	display: inline-block;
+	width: 150px;
+	height: 10px;
+	position: relative;
+	transform: translateY(-15px);
+	margin-left: 10px;
+	background: #ccc;
+	border-radius: 10px;
+}
+.unisound-player-overlay div .unisound-volume-fore{
+	position: absolute;
+	height: 10px;
+	background: #000;
+	border-radius: 10px;
+}
+.unisound-player-overlay div .unisound-volume-thumb{
+	position: absolute;
+	display: block;
+	left: 58%;
+	width: 20px;
+	height: 20px;
+	margin-left: -15px;
+	top: -5px;
+	border: 2px solid rgb(204, 204, 204);
+	border-radius: 50%;
+	box-sizing: border-box;
+	background: rgb(234, 234, 234);
+	cursor:pointer;
+}
+.unisound-banner-overlay .unisound-close{
+	position: absolute;
+	width:20px;
+	height:20px;
+	left: 101%;
+	top:0;
+	border:0;
+	padding:0;
+	margin:0;
+	background:url('../img/close.png') no-repeat;
+	background-size:100%;
+	cursor:pointer;
+}
+.unisound-banner-overlay{
+	position: absolute;
+	top: 140px;
+	margin: 0 auto;
+}
+.unisound-banner-overlay .unisound-banner{
+	position:relative;
+}
