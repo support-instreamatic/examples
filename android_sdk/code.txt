@@ -1,0 +1,56 @@
+public class MainTest extends AppCompatActivity implements IAdman.AdmanListener {
+
+    private IAdmanView admanView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_test);
+
+        admanView = new DefaultAdmanView(this, AdmanId.siteId(793));
+        admanView.setAutoPlay(true);
+        admanView.setListener(this);
+    }
+
+    public void test(View view) {
+        if (admanView.canPrepare()) {
+            admanView.prepare();
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        admanView.rebuild();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        admanView.pause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        admanView.resume();
+    }
+
+
+    @Override
+    public void stateChange(IAdman.AdmanState state) {
+        Toast.makeText(this, state.toString(), Toast.LENGTH_SHORT).show();
+        switch (state) {
+            case ERROR:
+            case MISSING_AD:
+            case PLAYBACK_STARTED:
+                break;
+        }
+    }
+
+    @Override
+    public void bannerTouched() {}
+
+    @Override
+    public void changeProgress(int position, int total) {}
+}
